@@ -1,0 +1,15 @@
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  h1:hover {
+    color: #007BFF;
+    transform: scale(1.1);
+  }
+  

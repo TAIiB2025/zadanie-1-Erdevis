@@ -1,0 +1,10 @@
+
+<div class="koszyk-info">
+    <p>Wartość Twojego koszyka to {{ totalPrice | currency: 'PLN' }}</p>
+    
+    
+    <button (click)="handleResetCart()" class="reset-button">
+      <i class="fa fa-trash"></i>
+    </button>
+  </div>
+  

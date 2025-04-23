@@ -1,0 +1,23 @@
+
+.koszyk-info {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .reset-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .reset-button:hover {
+    background-color: #ff1a1a;
+  }
+  

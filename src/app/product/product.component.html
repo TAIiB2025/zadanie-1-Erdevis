@@ -1,0 +1,40 @@
+
+<table class="product-table" [ngClass]="{'promocja': product.czyPromocja}">
+  
+    <tr *ngIf="isExpanded">
+      <th><strong>Nazwa</strong></th>
+      <th><strong>Cena</strong></th>
+      <th><strong>Data utworzenia</strong></th>
+      <th><strong>Liczba sztuk w koszyku</strong></th>
+      <th><strong>Dodaj do koszyka</strong></th>
+    </tr>
+    
+    <tr *ngIf="isExpanded">
+      <td>{{ product.nazwa }}</td>
+      <td>{{ product.cena | currency: 'PLN' }}</td>
+      <td>{{ product.dataUtworzenia | date: 'dd.MM.yyyy' }}</td>
+      <td>{{ product.quantity }}</td>
+      <td>
+        <button class="add-to-cart" (click)="onAddToCart()">Dodaj</button>
+      </td>
+    </tr>
+  
+    <tr *ngIf="!isExpanded">
+      <td colspan="5">
+        <strong>{{ product.nazwa }}</strong>
+      </td>
+    </tr>
+    <tr *ngIf="!isExpanded">
+      <td colspan="5">
+        <button (click)="toggleExpand()">Rozwiń</button>
+      </td>
+    </tr>
+  
+   
+    <tr *ngIf="isExpanded">
+      <td colspan="5">
+        <button (click)="toggleExpand()">Zwiń</button>
+      </td>
+    </tr>
+  </table>
+  
